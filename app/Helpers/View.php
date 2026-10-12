@@ -3,17 +3,12 @@
 namespace App\Helpers;
 
 /**
- * Class View
- * Mengelola rendering view antarmuka, sanitasi XSS, dan respon redirect.
- * Standar: J.620100.016.01 (Menulis Kode sesuai Guidelines dan Best Practices)
+ * Helper render template view, sanitasi XSS, dan respon HTTP.
  */
 class View
 {
     /**
-     * Me-render file view dengan data yang diberikan
-     *
-     * @param string $viewPath Path relatif di dalam resources/views (tanpa .php)
-     * @param array $data Data yang diekstrak ke dalam variabel view
+     * Render template view dengan passing variabel data.
      */
     public static function render(string $viewPath, array $data = []): void
     {

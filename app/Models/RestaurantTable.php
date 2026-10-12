@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class RestaurantTable
- * Model entitas meja restoran dengan enkapsulasi properti.
- * Standar: J.620100.018.02 (Pemrograman Berorientasi Objek)
+ * Model meja makan restoran (kapasitas dan status ketersediaan).
  */
 class RestaurantTable
 {

@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="restaurant-usecase-v2">
+    <mxGraphModel dx="1439" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary (Batasan Sistem) -->
+        <mxCell id="boundary" parent="1" style="swimlane;html=1;startSize=30;fillColor=#f8f9fa;strokeColor=#495057;fontStyle=1;swimlaneFillColor=#ffffff;rounded=1;arcSize=3;fontSize=13;fontColor=#212529;" value="Sistem Pemesanan Restoran (Local Station)" vertex="1">
+          <mxGeometry height="760" width="700" x="240" y="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Aktor Tunggal: Administrator -->
+        <mxCell id="actor_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;" value="Administrator" vertex="1">
+          <mxGeometry height="100" width="55" x="60" y="360" as="geometry" />
+        </mxCell>
+        
+        <!-- Use Case Utama -->
+        <mxCell id="uc_01" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-01: Pantau Dashboard Operasional" vertex="1">
+          <mxGeometry height="50" width="280" x="290" y="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_02" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-02: Kelola Data Meja (Kapasitas &amp; Status)" vertex="1">
+          <mxGeometry height="50" width="280" x="290" y="145" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_03" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-03: Kelola Katalog Menu Makanan &amp; Minuman" vertex="1">
+          <mxGeometry height="50" width="280" x="290" y="220" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_04" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-04: Buat Reservasi Alur 6-Langkah" vertex="1">
+          <mxGeometry height="55" width="280" x="290" y="315" as="geometry" />
+        </mxCell>
+        
+        <!-- Use Case Relasi <<include>> Reservasi -->
+        <mxCell id="uc_05" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontColor=#1e293b;" value="UC-05: Cek Ketersediaan Slot &amp; Meja" vertex="1">
+          <mxGeometry height="50" width="260" x="640" y="280" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_06" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontColor=#1e293b;" value="UC-06: Deteksi Bentrok Jadwal Interval" vertex="1">
+          <mxGeometry height="50" width="260" x="640" y="360" as="geometry" />
+        </mxCell>
+        
+        <!-- Use Case Pesanan Kasir -->
+        <mxCell id="uc_07" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-07: Buat Pesanan Menu Kasir" vertex="1">
+          <mxGeometry height="55" width="280" x="290" y="470" as="geometry" />
+        </mxCell>
+        
+        <!-- Use Case Relasi <<include>> Pesanan -->
+        <mxCell id="uc_08" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontColor=#1e293b;" value="UC-08: Snapshot Harga &amp; Hitung Total" vertex="1">
+          <mxGeometry height="50" width="260" x="640" y="472" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_09" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-09: Pelunasan Kasir &amp; Selesaikan Pesanan" vertex="1">
+          <mxGeometry height="50" width="280" x="290" y="595" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="uc_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;fontColor=#1e293b;" value="UC-10: Cetak Rekapitulasi Laporan Finansial" vertex="1">
+          <mxGeometry height="50" width="280" x="290" y="675" as="geometry" />
+        </mxCell>
+        
+        <!-- Garis Asosiasi Aktor ke Use Case (Dengan Arrow / Panah) -->
+        <mxCell id="edge_01" edge="1" parent="1" source="actor_admin" target="uc_01" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_02" edge="1" parent="1" source="actor_admin" target="uc_02" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_03" edge="1" parent="1" source="actor_admin" target="uc_03" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_04" edge="1" parent="1" source="actor_admin" target="uc_04" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_07" edge="1" parent="1" source="actor_admin" target="uc_07" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_09" edge="1" parent="1" source="actor_admin" target="uc_09" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_10" edge="1" parent="1" source="actor_admin" target="uc_10" style="html=1;endArrow=classic;endFill=1;strokeColor=#334155;strokeWidth=1.5;rounded=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Relasi <<include>> (Garis Putus-putus dengan Panah Terbuka) -->
+        <mxCell id="edge_inc_05" edge="1" parent="1" source="uc_04" target="uc_05" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endFill=0;rounded=0;strokeColor=#475569;fontSize=11;strokeWidth=1.2;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_inc_06" edge="1" parent="1" source="uc_04" target="uc_06" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endFill=0;rounded=0;strokeColor=#475569;fontSize=11;strokeWidth=1.2;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge_inc_08" edge="1" parent="1" source="uc_07" target="uc_08" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endFill=0;rounded=0;strokeColor=#475569;fontSize=11;strokeWidth=1.2;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

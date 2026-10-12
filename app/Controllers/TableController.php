@@ -8,9 +8,7 @@ use App\Helpers\View;
 use Throwable;
 
 /**
- * Class TableController
- * Pengendali master data meja (CRUD) dengan validasi sisi server.
- * Standar: J.620100.016.01 (Guidelines) & J.620100.017.02 (Pemrograman Terstruktur)
+ * Controller manajemen master data meja restoran.
  */
 class TableController
 {

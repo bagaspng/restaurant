@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class FoodItem
- * Subclass dari MenuItem untuk hidangan makanan.
- * Standar: J.620100.018.02 (Inheritance & Method Overriding)
+ * Model item makanan dengan atribut tingkat kepedasan.
  */
 class FoodItem extends MenuItem
 {

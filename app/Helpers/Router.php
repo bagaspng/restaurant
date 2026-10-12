@@ -3,16 +3,14 @@
 namespace App\Helpers;
 
 /**
- * Class Router
- * Router sederhana berbasis pola Front Controller untuk mengarahkan request HTTP ke Controller.
- * Standar: Pemrograman Berorientasi Objek & Modularitas (PSR-12)
+ * Router URL sederhana untuk memetakan request HTTP ke handler controller.
  */
 class Router
 {
     private static array $routes = [];
 
     /**
-     * Mendaftarkan rute HTTP GET
+     * Daftarkan rute GET.
      */
     public static function get(string $path, array|callable $handler, array $middlewares = []): void
     {
@@ -20,7 +18,7 @@ class Router
     }
 
     /**
-     * Mendaftarkan rute HTTP POST
+     * Daftarkan rute POST.
      */
     public static function post(string $path, array|callable $handler, array $middlewares = []): void
     {
@@ -38,7 +36,7 @@ class Router
     }
 
     /**
-     * Menjalankan dispatch rute berdasarkan URI dan HTTP Method
+     * Jalankan handler sesuai URI dan method HTTP request.
      */
     public static function dispatch(string $uri, string $method): void
     {

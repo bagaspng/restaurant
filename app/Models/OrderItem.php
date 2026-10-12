@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class OrderItem
- * Model entitas rincian item pesanan dengan fitur Price Snapshotting.
- * Standar: J.620100.018.02 (Pemrograman Berorientasi Objek)
+ * Model detail item pesanan (menyimpan snapshot nama & harga saat transaksi).
  */
 class OrderItem
 {

@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class Abstrak MenuItem
- * Fondasi entitas katalog menu restoran untuk menerapkan prinsip Object-Oriented Programming (OOP).
- * Standar: J.620100.018.02 (Mengimplementasikan Pemrograman Berorientasi Objek)
+ * Model dasar item menu restoran.
  */
 abstract class MenuItem
 {
@@ -55,8 +53,7 @@ abstract class MenuItem
     }
 
     /**
-     * Method abstrak yang wajib di-override oleh setiap subclass (FoodItem dan BeverageItem)
-     * Menunjukkan penerapan Inheritance, Abstraction, dan Method Overriding.
+     * Deskripsi cara penyajian hidangan.
      */
     abstract public function getServingType(): string;
 }

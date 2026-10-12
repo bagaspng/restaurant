@@ -3,19 +3,16 @@
 namespace App\Helpers;
 
 /**
- * Class Session
- * Mengelola sesi pengguna, flash message, dan proteksi CSRF.
- * Standar: J.620100.016.01 (Menulis Kode sesuai Guidelines dan Best Practices)
+ * Helper session PHP, flash message, dan token CSRF.
  */
 class Session
 {
     /**
-     * Memulai sesi dengan konfigurasi cookie yang aman
+     * Inisialisasi session dengan cookie aman.
      */
     public static function start(): void
     {
         if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
-            // Pengaturan cookie yang aman
             ini_set('session.cookie_httponly', '1');
             ini_set('session.use_only_cookies', '1');
             ini_set('session.cookie_samesite', 'Lax');
@@ -25,7 +22,7 @@ class Session
     }
 
     /**
-     * Meregenerasi ID sesi untuk mencegah serangan Session Fixation
+     * Regenerate ID session.
      */
     public static function regenerate(): void
     {

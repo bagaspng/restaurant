@@ -8,9 +8,7 @@ use App\Helpers\View;
 use Throwable;
 
 /**
- * Class MenuController
- * Pengendali katalog master menu (makanan, minuman, dessert).
- * Standar: J.620100.017.02 (Pemrograman Terstruktur)
+ * Controller katalog menu hidangan restoran.
  */
 class MenuController
 {

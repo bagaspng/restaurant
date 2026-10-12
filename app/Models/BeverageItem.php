@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class BeverageItem
- * Subclass dari MenuItem untuk minuman.
- * Standar: J.620100.018.02 (Inheritance & Method Overriding)
+ * Model item minuman dengan preferensi dingin atau hangat.
  */
 class BeverageItem extends MenuItem
 {

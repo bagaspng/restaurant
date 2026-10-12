@@ -10,8 +10,7 @@ use App\Helpers\Session;
 use App\Helpers\View;
 
 /**
- * Class DashboardController
- * Pengendali halaman utama ringkasan operasional harian.
+ * Controller dashboard utama (ringkasan status meja, reservasi, dan pesanan).
  */
 class DashboardController
 {

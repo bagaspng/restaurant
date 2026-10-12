@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class Admin
- * Subclass dari User yang merepresentasikan Administrator dengan hak akses penuh.
- * Standar: J.620100.018.02 (Inheritance & Method Overriding)
+ * Model Administrator dengan akses penuh ke seluruh modul sistem.
  */
 class Admin extends User
 {
@@ -15,7 +13,7 @@ class Admin extends User
     }
 
     /**
-     * Override method getPermissions untuk mengembalikan seluruh izin sistem
+     * Seluruh izin operasional sistem.
      */
     public function getPermissions(): array
     {
@@ -23,7 +21,6 @@ class Admin extends User
             'manage_users',
             'manage_tables',
             'manage_menus',
-            'manage_customers',
             'manage_reservations',
             'manage_orders',
             'view_reports',

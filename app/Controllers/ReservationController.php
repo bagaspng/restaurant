@@ -10,10 +10,7 @@ use App\Helpers\View;
 use Throwable;
 
 /**
- * Class ReservationController
- * Pengendali aksi reservasi meja restoran dengan alur kerja modern 6 langkah,
- * pemilihan slot 120 menit, kartu meja berdasar kapasitas, dan snapshot pemesan langsung.
- * Standar: PSR-12, Separation of Concerns
+ * Controller reservasi meja (alur wizard 6 langkah, slot 120 menit, dan snapshot pemesan).
  */
 class ReservationController
 {

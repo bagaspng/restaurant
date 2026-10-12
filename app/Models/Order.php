@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class Order
- * Model entitas header pesanan makanan/minuman.
- * Standar: J.620100.018.02 (Pemrograman Berorientasi Objek)
+ * Model header transaksi pesanan restoran.
  */
 class Order
 {

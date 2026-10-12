@@ -8,8 +8,7 @@ use App\Helpers\View;
 use Throwable;
 
 /**
- * Class ReportController
- * Pengendali laporan operasional dan rekapitulasi finansial restoran.
+ * Controller laporan operasional dan rekapitulasi finansial.
  */
 class ReportController
 {

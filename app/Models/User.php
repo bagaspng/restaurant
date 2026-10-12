@@ -3,9 +3,7 @@
 namespace App\Models;
 
 /**
- * Class Abstrak User
- * Fondasi entitas pengguna sistem untuk menerapkan prinsip Object-Oriented Programming (OOP).
- * Standar: J.620100.018.02 (Mengimplementasikan Pemrograman Berorientasi Objek)
+ * Model dasar pengguna sistem.
  */
 abstract class User
 {
@@ -43,13 +41,12 @@ abstract class User
     }
 
     /**
-     * Method abstrak yang wajib di-override oleh setiap subclass (Admin dan Staff)
-     * Menunjukkan penerapan Polymorphism dan Abstraction.
+     * Daftar izin akses peran pengguna.
      */
     abstract public function getPermissions(): array;
 
     /**
-     * Memeriksa apakah pengguna memiliki hak akses tertentu
+     * Cek apakah pengguna memiliki izin tertentu.
      */
     public function hasPermission(string $permission): bool
     {

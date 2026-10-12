@@ -12,8 +12,7 @@ use App\Helpers\View;
 use Throwable;
 
 /**
- * Class OrderController
- * Pengendali aksi transaksi pesanan dan pembuatan tagihan/nota.
+ * Controller transaksi pesanan hidangan dan pembuatan nota tagihan.
  */
 class OrderController
 {

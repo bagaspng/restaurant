@@ -8,9 +8,7 @@ use PDOException;
 use RuntimeException;
 
 /**
- * Class MenuRepository
- * Akses basis data untuk manajemen katalog menu makanan dan minuman.
- * Standar: J.620100.021.02 (Menerapkan Akses Basis Data)
+ * Repository katalog menu hidangan.
  */
 class MenuRepository
 {
