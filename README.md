@@ -1,4 +1,4 @@
-# SISTEM PEMESANAN RESTORAN (MODE LOKAL)
+# SISTEM PEMESANAN RESTORAN
 ### *Restaurant Reservation & Ordering System*
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.3%2B-blue.svg)](https://www.php.net/)
