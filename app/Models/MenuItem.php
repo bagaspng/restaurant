@@ -3,17 +3,17 @@
 namespace App\Models;
 
 /**
- * Class MenuItem
- * Model entitas menu makanan/minuman dengan tipe data harga desimal presisi.
- * Standar: J.620100.018.02 (Pemrograman Berorientasi Objek)
+ * Class Abstrak MenuItem
+ * Fondasi entitas katalog menu restoran untuk menerapkan prinsip Object-Oriented Programming (OOP).
+ * Standar: J.620100.018.02 (Mengimplementasikan Pemrograman Berorientasi Objek)
  */
-class MenuItem
+abstract class MenuItem
 {
-    private ?int $id;
-    private string $name;
-    private string $category;
-    private float $price;
-    private bool $isAvailable;
+    protected ?int $id;
+    protected string $name;
+    protected string $category;
+    protected float $price;
+    protected bool $isAvailable;
 
     public function __construct(?int $id, string $name, string $category, float $price, bool $isAvailable = true)
     {
@@ -53,4 +53,10 @@ class MenuItem
     {
         return 'Rp ' . number_format($this->price, 0, ',', '.');
     }
+
+    /**
+     * Method abstrak yang wajib di-override oleh setiap subclass (FoodItem dan BeverageItem)
+     * Menunjukkan penerapan Inheritance, Abstraction, dan Method Overriding.
+     */
+    abstract public function getServingType(): string;
 }
