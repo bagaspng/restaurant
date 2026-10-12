@@ -1,0 +1,18 @@
+# Dependencies
+/vendor/
+
+# Environment Configuration (Jangan simpan kredensial riil di Git)
+.env
+
+# Testing & Cache
+.phpunit.cache/
+.phpunit.result.cache
+
+# Logs
+*.log
+
+# IDE & OS Files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
